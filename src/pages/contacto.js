@@ -8,8 +8,8 @@ export default function Contacto() {
           <div>
             <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Información de contacto</h2>
             <p className="text-gray-700">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
-            <p className="text-gray-700 mt-4">Dirección: 123 Calle Principal, Ciudad</p>
-            <p className="text-gray-700">Teléfono: (123) 456-7890</p>
+            <p className="text-gray-700 mt-4">BOGOTÁ - COLOMBIA</p>
+            <p className="text-gray-700">Teléfono: 3202502648</p>
             <p className="text-gray-700">Correo electrónico: info@example.com</p>
           </div>
           <div>
@@ -48,7 +48,7 @@ export default function Contacto() {
                   name="mensaje"
                   rows="4"
                   className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300"
-                  placeholder="Escribe tu mensaje aquí"
+                  placeholder="Escribenos tus dudas, inquietudes o requerimientos, pronto te respondemos."
                 />
               </div>
               <button
