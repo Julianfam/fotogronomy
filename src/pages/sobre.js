@@ -1,8 +1,8 @@
 import React from 'react';
 
-const title = "Before they sold out";
-const subtitle = "readymade gluten";
-const description = "Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray";
+const title = "Te ayudamos a llamar la atención";
+const subtitle = "Fotografía provocativa";
+const description = "con mas de 4 años de experiencia trabajando en el sector gastronomicos y de productos, se les garantiza un trabajo especializado y acorde a lo que desean expresar";
 
 export default function sobre() {
   return (
