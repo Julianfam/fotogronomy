@@ -12,10 +12,10 @@ export default function Imagen100() {
     minHeight: '90vh', // Centrar verticalmente en el viewport
   };
 
-  const categoryText = 'CATEGORY';
-  const titleText = 'Raclette Blueberry Nextious Level';
-  const descriptionText = 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.';
-  const learnMoreText = 'Learn More';
+  const categoryText = 'Fotografía y Maquillaje de Alimentos';
+  const titleText = 'Capturar el sabor atraves del lente';
+  const descriptionText = 'Fotografía personalizada, Chef y maquillador de alimentos, ';
+  const learnMoreText = 'aprende mas';
   const likesText = '1.2K';
   const commentsText = '6';
 
