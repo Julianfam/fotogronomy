@@ -1,86 +1,42 @@
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
-
-
+import React from 'react';
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
-    <>
-      <div className="isolate bg-white">
-      
-      <div className="px-6 pt-6 lg:px-8">
-        
-        <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <Dialog.Panel focus="true" className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto flex flex-wrap">
+        <div className="flex w-full mb-20 flex-wrap">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
+            Master Cleanse Reliac Heirloom
+          </h1>
+          <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
+          </p>
+        </div>
+        <div className="flex flex-wrap md:-m-2 -m-1">
+          <div className="flex flex-wrap w-1/2">
+            <div className="md:p-2 p-1 w-1/2">
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
             </div>
-            
-          </Dialog.Panel>
-        </Dialog>
-      </div>
-      <main>
-        <div className="relative px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          
-            <div className="text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                DASHBOARD, LOGIN, LOGOUT, COOKIES
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                En este proyecto pueden encontrar toda la funiconalidad de un admin dashboars y los usuarios. 
-              </p>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                USER : admin@mail.com
-                PSWRD : admin123
-              </h1>
-              
+            <div className="md:p-2 p-1 w-1/2">
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
+            </div>
+            <div className="md:p-2 p-1 w-full">
+              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360" />
             </div>
           </div>
-          <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-            <svg
-              className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
-              viewBox="0 0 1155 678"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)"
-                fillOpacity=".3"
-                d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
-              />
-              <defs>
-                <linearGradient
-                  id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc"
-                  x1="1155.49"
-                  x2="-78.208"
-                  y1=".177"
-                  y2="474.645"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#9089FC" />
-                  <stop offset={1} stopColor="#FF80B5" />
-                </linearGradient>
-              </defs>
-            </svg>
+          <div className="flex flex-wrap w-1/2">
+            <div className="md:p-2 p-1 w-full">
+              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361" />
+            </div>
+            <div className="md:p-2 p-1 w-1/2">
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" />
+            </div>
+            <div className="md:p-2 p-1 w-1/2">
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303" />
+            </div>
           </div>
         </div>
-      </main>
-    </div>
-
-    </>
-  )
+      </div>
+    </section>
+  );
 }
