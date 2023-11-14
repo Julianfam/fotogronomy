@@ -71,7 +71,7 @@ export default function Imagen100() {
             <img src={imageUrl} alt={`Image ${index}`} style={imageStyle} />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
-                <div style={{ backgroundColor: 'white', borderRadius: '10px', padding: '20px', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)' }}>
+                <div style={{backgroundColor: 'rgba(255, 255, 255, 0.6)', borderRadius: '10px', padding: '20px', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.3)' }}>
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 responsive-text">{textContent[index].categoryText}</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 responsive-text">{textContent[index].titleText}</h1>
                   <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText}</p>

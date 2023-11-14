@@ -74,7 +74,7 @@ function GaleriaIntro() {
                 src={getImageUrl(index)}
               />
               {hoveredImage === `image${(index + 1).toString().padStart(2, '0')}.jpg` && (
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-red text-red text-right">
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-red text-white text-right">
                   {imageInfo[index]?.title}
                 </div>
               )}
