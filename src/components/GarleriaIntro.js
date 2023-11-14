@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function GaleriaIntro() {
+  const [loadedImages, setLoadedImages] = useState(6); // Inicialmente carga 6 imágenes
+
+  const loadMoreImages = () => {
+    setLoadedImages((prevLoadedImages) => prevLoadedImages + 3); // Carga 3 imágenes adicionales al hacer clic en "Cargar Más"
+  };
+
+  const imageFolder = '/assets/images/';
+  const getImageUrl = (index) => `${imageFolder}image${(index + 1).toString().padStart(2, '0')}.jpg`;
+
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -9,33 +18,26 @@ function GaleriaIntro() {
             El arte de Atraer
           </h1>
           <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-           Fotografía especializada para su Producto y Proyecto Gastronomico.l
+            Fotografía especializada para su Producto y Proyecto Gastronómico.
           </p>
         </div>
-        <div className="flex flex-wrap md:-m-2 -m-1">
-          <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
+        <div className="flex flex-wrap">
+          {[...Array(loadedImages)].map((_, index) => (
+            <div key={index} className="p-1 w-full md:w-1/2 lg:w-1/3">
+              <img alt={`gallery ${index + 1}`} className="w-full h-full object-cover object-center block" src={getImageUrl(index)} />
             </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
-            </div>
-            <div className="md:p-2 p-1 w-full">
-              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360" />
-            </div>
-          </div>
-          <div className="flex flex-wrap w-1/2">
-            <div className="md:p-2 p-1 w-full">
-              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361" />
-            </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" />
-            </div>
-            <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303" />
-            </div>
-          </div>
+          ))}
         </div>
+        {loadedImages < 20 && (
+          <div className="mx-auto mt-10">
+            <button
+              onClick={loadMoreImages}
+              className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base"
+            >
+              Cargar Más
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

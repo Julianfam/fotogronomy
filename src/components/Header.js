@@ -20,10 +20,10 @@ export default function Header() {
             <div className="mr-5 hover:text-gray-900">Gastronomía</div>
           </Link>
           <Link href="/producto" passHref>
-            <div className="mr-5 hover-text-gray-900">Producto</div>
+            <div className="mr-5 hover:text-gray-900">Producto</div>
           </Link>
           <Link href="/sobre" passHref>
-            <div className="mr-5 hover-text-gray-900">Sobre</div>
+            <div className="mr-5 hover:text-gray-900">Sobre</div>
           </Link>
         </nav>
         <Link href="/contacto" passHref>

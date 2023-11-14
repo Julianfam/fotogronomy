@@ -5,7 +5,7 @@ import { ProviderAuth } from 'hooks/useAuth';
 export default function App({ Component, pageProps }) {
   return (
     <>
-      ´<ProviderAuth>  
+      <ProviderAuth>  
           <MainLayout>
             <Component {...pageProps} />
           </MainLayout>
