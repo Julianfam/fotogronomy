@@ -50,7 +50,7 @@ function GaleriaIntro() {
   const getImageUrl = (index) => `${imageFolder}image${(index + 1).toString().padStart(2, '0')}.jpg`;
 
   return (
-    <section className="text-gray-600 body-font">
+    <section className=" body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex w-full mb-20 flex-wrap">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
@@ -64,7 +64,7 @@ function GaleriaIntro() {
           {[...Array(loadedImages)].map((_, index) => (
             <div
               key={index}
-              className="p-1 w-full md:w-1/2 lg:w-1/3"
+              className="p-1 w-full md:w-1/2 lg:w-1/3 relative"
               onMouseEnter={() => handleImageHover(`image${(index + 1).toString().padStart(2, '0')}.jpg`)}
               onMouseLeave={handleImageLeave}
             >
@@ -74,7 +74,7 @@ function GaleriaIntro() {
                 src={getImageUrl(index)}
               />
               {hoveredImage === `image${(index + 1).toString().padStart(2, '0')}.jpg` && (
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-white text-black text-center">
+                <div className="absolute bottom-0 left-0 right-0 p-2 bg-red text-red text-right">
                   {imageInfo[index]?.title}
                 </div>
               )}
