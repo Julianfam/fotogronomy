@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 
 // Array de objetos que contiene el nombre y el título de cada imagen
 const imageInfo = [
-  { name: 'image01.jpg', title: 'Título de la Imagen 1' },
-  { name: 'image02.jpg', title: 'Título de la Imagen 2' },
-  { name: 'image03.jpg', title: 'Título de la Imagen 3' },
-  { name: 'image04.jpg', title: 'Título de la Imagen 4' },
-  { name: 'image05.jpg', title: 'Título de la Imagen 5' },
-  { name: 'image06.jpg', title: 'Título de la Imagen 6' },
-  { name: 'image07.jpg', title: 'Título de la Imagen 7' },
-  { name: 'image08.jpg', title: 'Título de la Imagen 8' },
-  { name: 'image09.jpg', title: 'Título de la Imagen 9' },
-  { name: 'image10.jpg', title: 'Título de la Imagen 10' },
-  { name: 'image11.jpg', title: 'Título de la Imagen 11' },
+  { name: 'image01.jpg', title: 'pimenton berenjenas babaganoush' },
+  { name: 'image02.jpg', title: 'pepinillo' },
+  { name: 'image03.jpg', title: 'Jalapeños' },
+  { name: 'image04.jpg', title: 'Styling frutos rojos' },
+  { name: 'image05.jpg', title: 'Pulpo' },
+  { name: 'image06.jpg', title: 'Caipiroska' },
+  { name: 'image07.jpg', title: 'Burguer Event 1' },
+  { name: 'image08.jpg', title: 'Burguer Event 2' },
+  { name: 'image09.jpg', title: 'Fake Strawberry icecream 1' },
+  { name: 'image10.jpg', title: 'Fake Strawberry icecream 2' },
+  { name: 'image11.jpg', title: 'cer' },
   { name: 'image12.jpg', title: 'Título de la Imagen 12' },
   { name: 'image13.jpg', title: 'Título de la Imagen 13' },
   { name: 'image14.jpg', title: 'Título de la Imagen 14' },
@@ -74,7 +74,7 @@ function GaleriaIntro() {
                 src={getImageUrl(index)}
               />
               {hoveredImage === `image${(index + 1).toString().padStart(2, '0')}.jpg` && (
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-red text-white text-right">
+                <div className="absolute bottom-0 left-0 right-0 p-2 text-stone-500 text-right">
                   {imageInfo[index]?.title}
                 </div>
               )}

@@ -7,14 +7,16 @@ module.exports = {
     ],
     content: ['./src/**/*.{html,js}'],
     theme: {
-        colors: {
+        extend: {
             colors: {
-                sky: colors.sky, // New name
-                stone: colors.stone, // New name
-                neutral: colors.neutral, // New name
-                gray: colors.gray, // New name
-                slate: colors.slate, // New name
-              },
-        },
+                colors: {
+                    sky: colors.sky, // New name
+                    stone: colors.stone, // New name
+                    neutral: colors.neutral, // New name
+                    gray: colors.gray, // New name
+                    slate: colors.slate, // New name
+                },
+            },
+        }
     },
 };
