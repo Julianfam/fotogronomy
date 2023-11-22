@@ -16,11 +16,11 @@ export default function Header() {
           </div>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <Link href="/gastronomia" passHref>
-            <div className="mr-5 hover:text-gray-900">Gastronomía</div>
+          <Link href="/clientes" passHref>
+            <div className="mr-5 hover:text-gray-900">Experiencia</div>
           </Link>
           <Link href="/producto" passHref>
-            <div className="mr-5 hover:text-gray-900">Producto</div>
+            <div className="mr-5 hover:text-gray-900">Planes y Precios</div>
           </Link>
           <Link href="/sobre" passHref>
             <div className="mr-5 hover:text-gray-900">Sobre</div>
