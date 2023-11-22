@@ -12,7 +12,7 @@ const imageInfo = [
   { name: 'image08.jpg', title: 'Burguer Event 2' },
   { name: 'image09.jpg', title: 'Fake Strawberry icecream 1' },
   { name: 'image10.jpg', title: 'Fake Strawberry icecream 2' },
-  { name: 'image11.jpg', title: 'cer' },
+  { name: 'image11.jpg', title: 'cer' }, 
   { name: 'image12.jpg', title: 'Título de la Imagen 12' },
   { name: 'image13.jpg', title: 'Título de la Imagen 13' },
   { name: 'image14.jpg', title: 'Título de la Imagen 14' },
