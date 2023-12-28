@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 // Array de objetos que contiene el nombre y el título de cada imagen
 const imageInfo = [
@@ -12,7 +13,7 @@ const imageInfo = [
   { name: 'image08.jpg', title: 'Burguer Event 2' },
   { name: 'image09.jpg', title: 'Fake Strawberry icecream 1' },
   { name: 'image10.jpg', title: 'Fake Strawberry icecream 2' },
-  { name: 'image11.jpg', title: 'cer' }, 
+  { name: 'image11.jpg', title: 'cer' },
   { name: 'image12.jpg', title: 'Título de la Imagen 12' },
   { name: 'image13.jpg', title: 'Título de la Imagen 13' },
   { name: 'image14.jpg', title: 'Título de la Imagen 14' },
@@ -53,12 +54,8 @@ function GaleriaIntro() {
     <section className=" body-font">
       <div className="container px-5 py-24 mx-auto flex flex-wrap">
         <div className="flex w-full mb-20 flex-wrap">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">
-            El arte de Atraer
-          </h1>
-          <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-            Fotografía especializada para su Producto y Proyecto Gastronómico.
-          </p>
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">El arte de Atraer</h1>
+          <p className="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Fotografía especializada para su Producto y Proyecto Gastronómico.</p>
         </div>
         <div className="flex flex-wrap">
           {[...Array(loadedImages)].map((_, index) => (
@@ -68,25 +65,16 @@ function GaleriaIntro() {
               onMouseEnter={() => handleImageHover(`image${(index + 1).toString().padStart(2, '0')}.jpg`)}
               onMouseLeave={handleImageLeave}
             >
-              <img
-                alt={`gallery ${index + 1}`}
-                className="w-full h-full object-cover object-center block"
-                src={getImageUrl(index)}
-              />
+              <Image alt={`gallery ${index + 1}`} className="w-full h-full object-cover object-center block" src={getImageUrl(index)} width="1200" height="720" />
               {hoveredImage === `image${(index + 1).toString().padStart(2, '0')}.jpg` && (
-                <div className="absolute bottom-0 left-0 right-0 p-2 text-stone-500 text-right">
-                  {imageInfo[index]?.title}
-                </div>
+                <div className="absolute bottom-0 left-0 right-0 p-2 text-stone-500 text-right">{imageInfo[index]?.title}</div>
               )}
             </div>
           ))}
         </div>
         {loadedImages < 20 && (
           <div className="mx-auto mt-10">
-            <button
-              onClick={loadMoreImages}
-              className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base"
-            >
+            <button onClick={loadMoreImages} className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base">
               Cargar Más
             </button>
           </div>

@@ -3,7 +3,6 @@ import GaleriaIntro from '../components/GarleriaIntro';
 import Imagen100 from '../components/Imagen100';
 import SeccionConIcluidos from '@components/Icluidos';
 
-
 export default function Home() {
   return (
     <>

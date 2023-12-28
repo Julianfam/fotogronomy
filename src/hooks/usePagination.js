@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 const usePagination = (limit, currentOffset, total) => {
   const [offset, setOffset] = useState(currentOffset);
 
@@ -12,14 +12,10 @@ const usePagination = (limit, currentOffset, total) => {
       setOffset(offset - limit);
     }
   };
-  
-   const newOffset = offset;
 
-  return (
-     newOffset,
-    handleNext,
-    handlePrev
-  )
-}
+  const newOffset = offset;
+
+  return newOffset, handleNext, handlePrev;
+};
 
 export default usePagination;

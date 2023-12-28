@@ -1,28 +1,21 @@
 import React from 'react';
 
 // Textos modificables
-const pitchforkTitle = "Pitchfork Kickstarter Taxidermy";
-const pitchforkDescription = "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.";
+const pitchforkTitle = 'Pitchfork Kickstarter Taxidermy';
+const pitchforkDescription = 'Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.';
 
-const cardTitles = [
-  "Shooting Stars",
-  "The Catalyzer",
-  "Neptune",
-  "Melanchole",
-  "Bunker",
-  "Ramona Falls"
-];
+const cardTitles = ['Shooting Stars', 'The Catalyzer', 'Neptune', 'Melanchole', 'Bunker', 'Ramona Falls'];
 
 const cardContents = [
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.",
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.",
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.",
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.",
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.",
-  "Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm."
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
 ];
 
-const buttonText = "Button";
+const buttonText = 'Button';
 
 const SeccionConIcluidos = () => {
   return (
@@ -32,8 +25,6 @@ const SeccionConIcluidos = () => {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">{pitchforkTitle}</h1>
           <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">{pitchforkDescription}</p>
         </div>
-
-
 
         <div className="flex flex-wrap -m-4">
           {/* Cards con estilos personalizados */}
@@ -53,7 +44,6 @@ const SeccionConIcluidos = () => {
               </div>
             </div>
           ))}
-
         </div>
 
         {/* Botón */}
@@ -64,4 +54,3 @@ const SeccionConIcluidos = () => {
 };
 
 export default SeccionConIcluidos;
-

@@ -13,6 +13,6 @@ module.exports = {
       "next/core-web-vitals",
     ],
     rules: {
-      semi: ["error", "alwals"],
+      semi: ["error", "always"],
     },
   };
