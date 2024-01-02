@@ -57,9 +57,7 @@ export default function Imagen100() {
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
             <Image src={imageUrl} alt={`Image ${index}`} fill="auto"  style={{ objectFit: 'cover',
-    width: '100%',
-    height: '100%',
-    overflow: 'hidden',
+        overflow: 'hidden',
     '@media(maxWidth: 600px)': {
       height: '80vh', // Adjust the height for mobile screens
     }, }}/>
