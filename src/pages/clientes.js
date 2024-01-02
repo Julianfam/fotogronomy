@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import img1 from '/public/assets/clientes/divinacomedia.jpg';
+import img2 from '/public/assets/clientes/El porto.jpg';
+import img3 from '/public/assets/clientes/fisa-logo-1595870600.jpg';
+import img4 from '/public/assets/clientes/logo-SanducheR-e1699038261984.png';
 
 // Textos modificables
 const sectionTitle = 'EXPERIENCIA';
@@ -10,26 +14,22 @@ const teamMembers = [
   {
     name: 'Divina Comedia',
     role: 'Fotografía de Alimentos',
-    description: 'DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
-    imageSrc: 'https://dummyimage.com/200x200',
+    imageSrc: {img1},
   },
   {
     name: 'El Porto Restaurante Bar ',
     role: 'Diseño de Menú y Fotografíade Alimentos',
-    description: 'DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
-    imageSrc: 'https://dummyimage.com/201x201',
+    imageSrc: {img2},
   },
   {
-    name: 'Fotografía de producto',
-    role: 'TromoPlas SA',
-    description: 'DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
-    imageSrc: 'https://dummyimage.com/202x202',
+    name: 'TromoPlas SA',
+    role: 'Fotografía de producto',
+    imageSrc: {img3},
   },
   {
     name: 'San Duche',
     role: 'Fotografía con Maquillaje de Alimentos ',
-    description: 'DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.',
-    imageSrc: 'https://dummyimage.com/203x203',
+    imageSrc: {img4},
   },
 ];
 
@@ -46,7 +46,7 @@ const clientes = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
               <div className="h-full flex flex-col items-center text-center">
-                <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src={member.imageSrc} width={200} height={200} />
+                <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src={member.imageSrc} width={200} height={200}  style={{ objectFit: 'cover', overflow: 'hidden' }} />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">{member.name}</h2>
                   <h3 className="text-gray-500 mb-3">{member.role}</h3>
