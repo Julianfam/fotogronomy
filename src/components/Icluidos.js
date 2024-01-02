@@ -1,21 +1,21 @@
 import React from 'react';
 
 // Textos modificables
-const pitchforkTitle = 'Pitchfork Kickstarter Taxidermy';
-const pitchforkDescription = 'Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.';
+const pitchforkTitle = 'Especializados en Gastronomia y Producto, Potenciamos la edicion con IA';
+const pitchforkDescription = 'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
 
-const cardTitles = ['Shooting Stars', 'The Catalyzer', 'Neptune', 'Melanchole', 'Bunker', 'Ramona Falls'];
+const cardTitles = ['Maquillaje Profesional de Alimentos', 'Shorts? Reels?', 'Mejora con Inteligencia Artificial(IA)', 'Ediciones a tu medida: Tu toque, tu Marca', 'Fotografía y Video', 'Fotos, videos Y Ediciones a tu medida'];
 
 const cardContents = [
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
-  'Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.',
+  'Transforma tus platillos en obras maestras visuales. ¡Haz que la presentación de tus alimentos sea tan deliciosa para los ojos como para el paladar!',
+  'Conquista las redes sociales con contenido corto y memorable. Diferénciate en Shorts y Reels para destacar en un mundo de atención fugaz.',
+  'Eleva tu vida con la magia de la Inteligencia Artificial. Descubre cómo la IA puede ser tu aliada para un crecimiento personal y profesional imparable.',
+  'Personaliza tu marca con ediciones que reflejen tu esencia. ¡Haz que cada pieza visual cuente tu historia de manera única!',
+  'Captura la esencia de momentos inolvidables. Aprende a contar historias impactantes a través de la lente y el movimiento.',
+  'Da vida a tu visión con contenido visual personalizado. Desde fotos hasta videos, cada pieza será una expresión auténtica de tu estilo y marca.',
 ];
 
-const buttonText = 'Button';
+const buttonText = 'Contactanos';
 
 const SeccionConIcluidos = () => {
   return (
