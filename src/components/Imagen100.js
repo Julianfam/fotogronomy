@@ -60,6 +60,7 @@ export default function Imagen100() {
             alt={`Image ${index}`} 
             width="1200" 
             height="720"
+            style={{ width: '100%', maxHeight: '80vh', objectFit: 'cover' }}
             />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
