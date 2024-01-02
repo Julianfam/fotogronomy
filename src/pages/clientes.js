@@ -1,10 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import img1 from '/public/assets/clientes/divinacomedia.jpg';
-import img2 from '/public/assets/clientes/El porto.jpg';
-import img3 from '/public/assets/clientes/fisa-logo-1595870600.jpg';
-import img4 from '/public/assets/clientes/logo-SanducheR-e1699038261984.png';
 
 // Textos modificables
 const sectionTitle = 'EXPERIENCIA';
@@ -14,22 +10,22 @@ const teamMembers = [
   {
     name: 'Divina Comedia',
     role: 'Fotografía de Alimentos',
-    imageSrc: {img1},
+    imageSrc: '/public/assets/clientes/divinacomedia.jpg',
   },
   {
     name: 'El Porto Restaurante Bar ',
     role: 'Diseño de Menú y Fotografíade Alimentos',
-    imageSrc: {img2},
+    imageSrc: '/public/assets/clientes/El_porto.jpg',
   },
   {
     name: 'TromoPlas SA',
     role: 'Fotografía de producto',
-    imageSrc: {img3},
+    imageSrc: '/public/assets/clientes/fisa-logo-1595870600.jpg',
   },
   {
     name: 'San Duche',
     role: 'Fotografía con Maquillaje de Alimentos ',
-    imageSrc: {img4},
+    imageSrc: '/public/assets/clientes/logo-SanducheR-e1699038261984.png',
   },
 ];
 
@@ -46,7 +42,14 @@ const clientes = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="p-4 lg:w-1/4 md:w-1/2">
               <div className="h-full flex flex-col items-center text-center">
-                <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src={member.imageSrc} width={200} height={200}  style={{ objectFit: 'cover', overflow: 'hidden' }} />
+                <Image
+                  alt="team"
+                  className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                  src={member.imageSrc}
+                  width={200}
+                  height={200}
+                  style={{ objectFit: 'cover', overflow: 'hidden' }}
+                />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">{member.name}</h2>
                   <h3 className="text-gray-500 mb-3">{member.role}</h3>

@@ -2,9 +2,17 @@ import React from 'react';
 
 // Textos modificables
 const pitchforkTitle = 'Especializados en Gastronomia y Producto, Potenciamos la edicion con IA';
-const pitchforkDescription = 'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
+const pitchforkDescription =
+  'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
 
-const cardTitles = ['Maquillaje Profesional de Alimentos', 'Shorts? Reels?', 'Mejora con Inteligencia Artificial(IA)', 'Ediciones a tu medida: Tu toque, tu Marca', 'Fotografía y Video', 'Fotos, videos Y Ediciones a tu medida'];
+const cardTitles = [
+  'Maquillaje Profesional de Alimentos',
+  'Shorts? Reels?',
+  'Mejora con Inteligencia Artificial(IA)',
+  'Ediciones a tu medida: Tu toque, tu Marca',
+  'Fotografía y Video',
+  'Fotos, videos Y Ediciones a tu medida',
+];
 
 const cardContents = [
   'Transforma tus platillos en obras maestras visuales. ¡Haz que la presentación de tus alimentos sea tan deliciosa para los ojos como para el paladar!',
@@ -15,7 +23,7 @@ const cardContents = [
   'Da vida a tu visión con contenido visual personalizado. Desde fotos hasta videos, cada pieza será una expresión auténtica de tu estilo y marca.',
 ];
 
-const buttonText = 'Contactanos';
+const buttonText = 'Button';
 
 const SeccionConIcluidos = () => {
   return (
