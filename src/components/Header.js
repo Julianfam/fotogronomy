@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import logo from '/public/assets/images/icons_478376.svg'
 
 export default function Header() {
   return (
@@ -9,9 +10,9 @@ export default function Header() {
         <Link href="/" passHref>
           <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image
-              src="/public/assets/images/icons_478376.svg"
+              src={logo}
               alt="Icon"
-              className="w-5 h-5
+              className="w-50 h-50
            text-white p-2  bg-indigo-500 rounded-full"
               width={50}
               height={50}
