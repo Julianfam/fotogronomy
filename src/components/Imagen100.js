@@ -56,7 +56,13 @@ export default function Imagen100() {
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image src={imageUrl} alt={`Image ${index}`} fill="auto"  style={{ objectFit: 'cover' }}/>
+            <Image src={imageUrl} alt={`Image ${index}`} fill="auto"  style={{ objectFit: 'cover',
+    width: '100%',
+    height: '100%',
+    overflow: 'hidden',
+    '@media(maxWidth: 600px)': {
+      height: '80vh', // Adjust the height for mobile screens
+    }, }}/>
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div
