@@ -65,13 +65,7 @@ function GaleriaIntro() {
               onMouseEnter={() => handleImageHover(`image${(index + 1).toString().padStart(2, '0')}.jpg`)}
               onMouseLeave={handleImageLeave}
             >
-              <Image alt={`gallery ${index + 1}`} 
-              className="w-full h-full object-cover object-center block" 
-              src={getImageUrl(index)} 
-              width="1200" 
-              height="720" 
-              
-              />
+              <Image alt={`gallery ${index + 1}`} className="w-full h-full object-cover object-center block" src={getImageUrl(index)} width="1200" height="720" />
               {hoveredImage === `image${(index + 1).toString().padStart(2, '0')}.jpg` && (
                 <div className="absolute bottom-0 left-0 right-0 p-2 text-stone-500 text-right">{imageInfo[index]?.title}</div>
               )}

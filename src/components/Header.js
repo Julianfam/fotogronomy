@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '/public/assets/images/icons_478376.svg'
+import logo from '/public/assets/images/icons_478376.svg';
 
 export default function Header() {
   return (
