@@ -14,8 +14,8 @@ export default function Imagen100() {
     {
       categoryText: 'Fotografía y Maquillaje de Alimentos',
       titleText: 'Capturar el sabor a través del lente',
-      descriptionText: 'Fotografía + Maquillaje',
-      learnMoreText: 'Learn More 1',
+      descriptionText: 'Fotografía gastronomica',
+      learnMoreText: 'Descubre mas Fotos',
       likesText: '1.2K 1',
       commentsText: '6 1',
     },
@@ -56,7 +56,7 @@ export default function Imagen100() {
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image src={imageUrl} alt={`Image ${index}`} fill="auto" style={{ objectFit: 'cover', overflow: 'hidden' }} />
+            <Image src={imageUrl} alt={`Image ${index}`} fill="auto" />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div
@@ -74,6 +74,10 @@ export default function Imagen100() {
                     className="text-indigo-500 inline-flex items-center responsive-text"
                     onClick={() => {
                       // Handle click event
+                      const galeriaIntroSection = document.getElementById('galeriaIntroSection');
+                      if (galeriaIntroSection) {
+                        galeriaIntroSection.scrollIntoView({ behavior: 'smooth' });
+                      }
                     }}
                   >
                     {textContent[index].learnMoreText}

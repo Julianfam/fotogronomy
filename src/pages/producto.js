@@ -32,28 +32,28 @@ const producto = () => {
   // Datos de cada tarjeta de precio
   const priceCards = [
     {
-      title: 'FOTOGRAFÍA PUBLICITARIA + MAQUILLAJE DE ALIMENTOS',
-      price: 'DESDE $200,000',
-      features: ['Vexillologist pitchfork', 'Tumeric plaid portland', 'Mixtape chillwave tumeric'],
-      buttonText: 'Button',
+      title: 'FOTOGRAFÍA GASTRONOMICA CON MAQUILLAJE DE ALIMENTOS',
+      price: 'desde $200,000',
+      features: ['Iluminación', 'Fotografo y Maquillador de alimentos', 'Fotografía HD, Video HD Texturas'],
+      buttonText: 'Contactanos',
     },
     {
-      title: 'DIA COMPLETO',
-      price: '$1000,000',
-      features: ['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn'],
-      buttonText: 'Upgrade',
+      title: 'Día COMPLETO de Fotografía O Reels',
+      price: '$800,000',
+      features: ['Dia completo de Producción', 'La planeación y Edición van incluidas', 'Montaje de Platos recomendado'],
+      buttonText: 'Contrata tu Día. ',
     },
     {
-      title: 'MANEJO REDES',
-      price: '$500,000',
-      features: ['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn', 'Mixtape chillwave tumeric'],
+      title: 'MANEJO de REDES, Planeación de Campañas',
+      price: 'desde $300,000',
+      features: ['Por  meses o por Campaña', 'desde 8 publicaciones'],
       buttonText: 'Subscribe',
     },
     {
-      title: 'PREMIUM',
-      price: '$72',
-      features: ['Vexillologist pitchfork', 'Tumeric plaid portland', 'Hexagon neutra unicorn', 'Mixtape chillwave tumeric'],
-      buttonText: 'Get Started',
+      title: 'Solicitud Especializada',
+      price: 'desde $300,000',
+      features: ['Escenografía personalizada', 'Hecho a la medida '],
+      buttonText: 'Dejanos un Mensaje',
     },
   ];
 
