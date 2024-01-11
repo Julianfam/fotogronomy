@@ -48,7 +48,7 @@ export default function Imagen100() {
   const imageContainerStyle = {
     width: '100%',
     height: '100vh',
-    overflow: 'hidden',
+    overflow: 'visible  ',
     position: 'relative',
   };
   return (
@@ -56,7 +56,7 @@ export default function Imagen100() {
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image src={imageUrl} alt={`Image ${index}`}  fill="auto" style={{ objectFit: 'cover', overflow: 'hidden' }} />
+            <Image src={imageUrl} alt={`Image ${index}`} fill="auto" style={{ objectFit: 'cover', overflow: 'hidden' }} />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div
