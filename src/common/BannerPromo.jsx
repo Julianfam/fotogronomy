@@ -12,7 +12,7 @@ const Banner = () => {
             white-space: normal;
             overflow: hidden;
             animation: moveBanner 17s linear infinite;
-            width: 100%; 
+            width: 100%;
           }
 
           @keyframes moveBanner {
