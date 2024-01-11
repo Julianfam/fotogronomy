@@ -103,7 +103,7 @@ const Footer = () => {
           </button>
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
             © 2024 FotoGronomy —
-            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
+            <a href="www.juliandev.tech" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
               @julianandrade
             </a>
           </p>

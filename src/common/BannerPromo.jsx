@@ -9,9 +9,10 @@ const Banner = () => {
       <style jsx>
         {`
           .single-line {
-            white-space: nowrap;
+            white-space: normal;
             overflow: hidden;
             animation: moveBanner 17s linear infinite;
+            width: 100%; 
           }
 
           @keyframes moveBanner {

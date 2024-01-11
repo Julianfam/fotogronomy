@@ -2,6 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import imgc1 from '/public/assets/clientes/divinacomedia.jpg';
+import imgc2 from '/public/assets/clientes/El_porto.jpg';
+import imgc3 from '/public/assets/clientes/fisa-logo-1595870600.jpg';
+import imgc4 from '/public/assets/clientes/logo-SanducheR-e1699038261984.png';
+
 // Textos modificables
 const sectionTitle = 'EXPERIENCIA';
 const sectionDescription = 'Algunos de los que han pasado por nuestro lente. ';
@@ -10,22 +15,22 @@ const teamMembers = [
   {
     name: 'Divina Comedia',
     role: 'Fotografía de Alimentos',
-    imageSrc: '/public/assets/clientes/divinacomedia.jpg',
+    imageSrc: imgc1,
   },
   {
     name: 'El Porto Restaurante Bar ',
     role: 'Diseño de Menú y Fotografíade Alimentos',
-    imageSrc: '/public/assets/clientes/El_porto.jpg',
+    imageSrc: imgc2,
   },
   {
     name: 'TromoPlas SA',
     role: 'Fotografía de producto',
-    imageSrc: '/public/assets/clientes/fisa-logo-1595870600.jpg',
+    imageSrc: imgc3,
   },
   {
     name: 'San Duche',
     role: 'Fotografía con Maquillaje de Alimentos ',
-    imageSrc: '/public/assets/clientes/logo-SanducheR-e1699038261984.png',
+    imageSrc: imgc4,
   },
 ];
 
@@ -48,7 +53,7 @@ const clientes = () => {
                   src={member.imageSrc}
                   width={200}
                   height={200}
-                  style={{ objectFit: 'cover', overflow: 'hidden' }}
+                  style={{ objectFit: 'cover', overflow: 'none' }}
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">{member.name}</h2>
