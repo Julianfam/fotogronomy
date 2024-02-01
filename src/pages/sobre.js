@@ -2,10 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import imgSobre from '/public/assets/images/image04.jpg';
 
-const title = 'Te ayudamos a llamar la atención';
-const subtitle = 'Fotografía provocativa';
-const description = 'con mas de 4 años de experiencia trabajando en el sector gastronomicos y de productos, se les garantiza un trabajo especializado y acorde a lo que desean expresar';
-
+const title = 'Despierta Paladares y Miradas: Donde la Gastronomía se Convierte en Arte Visual';
+const subtitle = '¡Bienvenido al fascinante mundo de la fotografía gastronómica y visual con un toque provocativo!';
+const description = [
+  'Soy Julian Andrade, Chef, Fotógrafo Gastronómico y Maquillador de Alimentos con 4+ años de experiencia en la creación de imágenes que despiertan emociones. Destaco cada detalle culinario y fusiono el arte visual con la gastronomía. Experiencia culminante, imágenes emotivas, especialización y colaboración, exploramos el mundo del video. Transformemos la percepción de tus productos. ¿Listo para despertar miradas y sabores? ¡Conversemos y hagamos magia visual!',
+];
 export default function sobre() {
   return (
     <section className="text-gray-600 body-font">
@@ -17,8 +18,8 @@ export default function sobre() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
             {title}
             <br className="hidden lg:inline-block" />
-            {subtitle}
           </h1>
+          <h2 className="font-bold">{subtitle}</h2>
           <p className="mb-8 leading-relaxed">{description}</p>
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Dale calidad a tu imagen</button>

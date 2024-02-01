@@ -32,28 +32,28 @@ const producto = () => {
   // Datos de cada tarjeta de precio
   const priceCards = [
     {
-      title: 'FOTOGRAFÍA GASTRONOMICA CON MAQUILLAJE DE ALIMENTOS',
+      title: 'Fotografía Gastronómica con Maquillaje de Alimentos',
       price: 'desde $200,000',
-      features: ['Iluminación', 'Fotografo y Maquillador de alimentos', 'Fotografía HD, Video HD Texturas'],
-      buttonText: 'Contactanos',
+      features: ['Iluminación de Alta Calidad', 'Fotografo y Maquillador de alimentos', 'Fotografía HD y Video HD con Texturas'],
+      buttonText: 'Contacta con nosotros para una sesión',
     },
     {
-      title: 'Día COMPLETO de Fotografía O Reels',
+      title: 'Día Completo de Fotografía O Reels',
       price: '$800,000',
-      features: ['Dia completo de Producción', 'La planeación y Edición van incluidas', 'Montaje de Platos recomendado'],
+      features: ['Producción durante todo el día', 'Planeación y Edición incluidas', 'Montaje de Platos recomendado'],
       buttonText: 'Contrata tu Día. ',
     },
     {
-      title: 'MANEJO de REDES, Planeación de Campañas',
+      title: 'Manejo de Redes y Planeación de Campañas',
       price: 'desde $300,000',
-      features: ['Por  meses o por Campaña', 'desde 8 publicaciones'],
+      features: ['Por  meses o por Campaña', 'Incluye al menos 8 Publicaciones'],
       buttonText: 'Subscribe',
     },
     {
       title: 'Solicitud Especializada',
       price: 'desde $300,000',
-      features: ['Escenografía personalizada', 'Hecho a la medida '],
-      buttonText: 'Dejanos un Mensaje',
+      features: ['Escenografía Especializada y Personalizada', 'Diseño a la Medida de tus Necesidades'],
+      buttonText: 'Diseño a la Medida de tus Necesidades',
     },
   ];
 
