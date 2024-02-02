@@ -1,7 +1,10 @@
 import React from 'react';
 
 // Componente de Tarjeta de Precio
-const PriceCard = ({ title, price, features, buttonText }) => (
+const PriceCard = ({ title, price, features, buttonText }) =>{
+  const handleNavigation = () => {
+    window.location.href = '/contacto';
+  }; return (
   <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
     <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
       <h2 className="text-sm tracking-widest title-font mb-1 font-medium">{title}</h2>
@@ -16,7 +19,7 @@ const PriceCard = ({ title, price, features, buttonText }) => (
           {feature}
         </p>
       ))}
-      <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
+      <button onClick={handleNavigation} className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
         {buttonText}
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -26,7 +29,7 @@ const PriceCard = ({ title, price, features, buttonText }) => (
     </div>
   </div>
 );
-
+}
 // Componente de Sección de Precios
 const producto = () => {
   // Datos de cada tarjeta de precio
@@ -70,5 +73,4 @@ const producto = () => {
     </section>
   );
 };
-
 export default producto;

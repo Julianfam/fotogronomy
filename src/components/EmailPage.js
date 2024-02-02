@@ -13,15 +13,16 @@ class EmailPage extends Component {
 
   emailSubscriptions = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_v0nv5xo', 'template_5xtcpzp', e.target, 'LYRlOjidE5geJfm1E').then(
-      (result) => {
-        console.log(result.text);
-        this.showPopup();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    emailjs.sendForm('service_v0nv5xo', 'template_5xtcpzp', e.target, 'LYRlOjidE5geJfm1E')
+      .then(
+        (result) => {
+          console.log(result.text);
+          this.showPopup();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     e.target.reset();
   };
 
@@ -53,7 +54,9 @@ class EmailPage extends Component {
               placeholder="Enter your email here..."
             />
           </div>
-          <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover-bg-indigo-600 rounded cursor-pointer">Subscribirme</button>
+          <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover-bg-indigo-600 rounded cursor-pointer">
+            Subscribirme
+          </button>
         </form>
         {this.state.showPopup && (
           <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">

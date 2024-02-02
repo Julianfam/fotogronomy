@@ -31,7 +31,7 @@ const Contacto = () => {
           <p className="text-gray-700">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
           <p className="text-gray-700 mt-4">BOGOTÁ - COLOMBIA</p>
           <p className="text-gray-700">Teléfono: 3202502648</p>
-          <p className="text-gray-700">Correo electrónico: info@example.com</p>
+          <p className="text-gray-700">Email: fotogronomy@gmail.com</p>
         </div>
         <div>
           <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Formulario de contacto</h2>
@@ -46,8 +46,19 @@ const Contacto = () => {
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                 Correo electrónico
               </label>
-              <input type="email" id="email" name="user_email" className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300" placeholder="example@example.com" />
+              <input type="email" id="email" name="user_email" className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300" placeholder="correo@mail.com" />
             </div>
+                <div className="mb-4">
+                  <label htmlFor="plan" className="block text-sm font-medium text-gray-700">
+                    Selecciona un plan
+                  </label>
+                  <select id="plan" name="selected_plan" className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300">
+                    <option value="plan1">Fotografía Gastronómica con Maquillaje de Alimentos</option>
+                    <option value="plan2">Día Completo de Fotografía O Reels</option>
+                    <option value="plan3">Manejo de Redes y Planeación de Campañas</option>
+                    <option value="plan4">Solicitud Especializada</option>
+                  </select>
+                </div>
             <div className="mb-4">
               <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
                 Mensaje
