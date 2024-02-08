@@ -7,6 +7,9 @@ const subtitle = '¡Bienvenido al fascinante mundo de la fotografía gastronómi
 const description = [
   'Soy Julian Andrade, Chef, Fotógrafo Gastronómico y Maquillador de Alimentos con 4+ años de experiencia en la creación de imágenes que despiertan emociones. Destaco cada detalle culinario y fusiono el arte visual con la gastronomía. Experiencia culminante, imágenes emotivas, especialización y colaboración, exploramos el mundo del video. Transformemos la percepción de tus productos. ¿Listo para despertar miradas y sabores? ¡Conversemos y hagamos magia visual!',
 ];
+const handleNavigation = () => {
+  window.location.href = '/contacto';
+};
 export default function sobre() {
   return (
     <section className="text-gray-600 body-font">
@@ -22,7 +25,9 @@ export default function sobre() {
           <h2 className="font-bold">{subtitle}</h2>
           <p className="mb-8 leading-relaxed">{description}</p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Dale calidad a tu imagen</button>
+            <button onClick={handleNavigation} className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              Dale calidad a tu imagen
+            </button>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import imgc1 from '/public/assets/clientes/divinacomedia.jpg';
+import { imgc1 } from '/public/assets/clientes/divinacomedia.jpg';
 import imgc2 from '/public/assets/clientes/El_porto.jpg';
 import imgc3 from '/public/assets/clientes/fisa-logo-1595870600.jpg';
 import imgc4 from '/public/assets/clientes/logo-SanducheR-e1699038261984.png';
