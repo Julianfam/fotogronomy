@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import imgcard from '/public/assets/tausha3salsas.jpg';
 
-const ContactPage = () => {
+const Contact = () => {
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -12,10 +12,10 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <h1 ref={titleRef} className="text-4xl font-bold mb-8">
+      <h1 ref={titleRef} className="text-4xl font-bold mb-8 p-3">
         Fotogronomy
       </h1>
-      <h3 className="text-2xl mb-8"> Este es nuestro portal de contacto</h3>
+      <h3 className="text-2xl mb-8 p-3"> Este es nuestro portal de contacto</h3>
       <Image src={imgcard} alt="Tausha 3 Salsas" style={{ height: 'auto', width: '80vw', overflow: 'hidden' }} />
       <div className="flex flex-col items-center w-full py-4 ">
         <a href="https://www.fotogronomy.com" target="_blank" rel="noopener noreferrer">
@@ -35,4 +35,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;
