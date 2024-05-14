@@ -31,7 +31,7 @@ export default function Header() {
             <div className="mr-5 hover:text-gray-900">Sobre</div>
           </Link>
         </nav>
-        <Link href="/contacto" passHref>
+        <Link href="/contact" passHref>
           <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Contáctanos
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
