@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 // Textos modificables
 const pitchforkTitle = 'Especializados en Gastronomia y Producto, Potenciamos la edicion con IA';
@@ -56,12 +55,9 @@ const SeccionConIcluidos = () => {
         </div>
 
         {/* Botón */}
-       <link href="/contact" passHref>
-        <button className="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
-        {buttonText}
-        </button>
-       </link>
-        
+        <link href="/contact" passHref>
+          <button className="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">{buttonText}</button>
+        </link>
       </div>
     </section>
   );
