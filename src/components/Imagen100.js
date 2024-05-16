@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import image1 from '/public/assets/images/image07.jpg';
-import image2 from '/public/assets/images/image18.jpg';
+import image2 from '/public/assets/imgalimento/Bruna_0016black.jpg';
 import image3 from '/public/assets/imgproducto/mermelada_frutos_rojos.jpg';
 
 export default function Imagen100() {
@@ -40,7 +40,7 @@ export default function Imagen100() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 400,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -50,15 +50,22 @@ export default function Imagen100() {
   const imageContainerStyle = {
     width: '100%',
     height: '100vh',
-    overflow: 'visible  ',
+    overflow: 'visible',
     position: 'relative',
   };
+
   return (
     <Slider {...sliderSettings}>
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image src={imageUrl} alt={`Image ${index}`} fill="auto" style={{ objectFit: 'cover', overflow: 'hidden' }} />
+            <Image
+              src={imageUrl}
+              alt={`Image ${index}`}
+              fill="auto"
+              style={{ objectFit: 'cover', overflow: 'hidden' }}
+              loading="lazy" // Enable lazy loading
+            />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div
