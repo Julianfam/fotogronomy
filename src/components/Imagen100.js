@@ -45,6 +45,7 @@ export default function Imagen100() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    pauseOnHover: false
   };
 
   const imageContainerStyle = {
