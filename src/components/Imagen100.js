@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import image1 from '/public/assets/images/image07.jpg';
 import image2 from '/public/assets/images/image18.jpg';
-import image3 from '/public/assets/images/image23.jpg';
+import image3 from '/public/assets/imgproducto/mermelada_frutos_rojos.jpg';
 
 export default function Imagen100() {
   const imageUrls = [image1, image2, image3];
@@ -13,8 +13,8 @@ export default function Imagen100() {
   const textContent = [
     {
       categoryText: 'Fotografía y Maquillaje de Alimentos',
-      titleText: 'Capturar el sabor a través del lente',
-      descriptionText: 'Fotografía gastronomica',
+      titleText: 'Interesado en fotografía profesional de alimentos?',
+      descriptionText: 'La idea es provocar, somos especializados en alimentos',
       learnMoreText: 'Descubre mas Fotos',
       likesText: '1.2K 1',
       commentsText: '6 1',
