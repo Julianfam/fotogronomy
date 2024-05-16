@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import image1 from '/public/assets/images/image07.jpg';
-import image2 from '/public/assets/trattoria-divina-comedia-zona-g-italia-edicion-produccion-foodstyling-bogota-cinco-sentidos-food-lab-fotografia-de-alimentos-web-diseño-branding0420000.jpg';
+import image2 from '/public/assets/Hamburguesa-chill-grill.jpg';
 import image3 from '/public/assets/images/image29.jpg';
 
 export default function Imagen100() {
