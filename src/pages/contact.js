@@ -27,7 +27,11 @@ const Contact = () => {
         <a href="https://www.instagram.com/fotogronomy" target="_blank" rel="noopener noreferrer">
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw mb-4">INSTAGRAM</button>
         </a>
-        <a href="https://wa.me/573202502648?text=Hola,%20Estoy%20interesado%20en%20mas%20información%20sobre%20como%20pueden%20mejorar%20la%20imagen%20de%20mi%20restaurante" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/573202502648?text=Hola,%20Estoy%20interesado%20en%20mas%20información%20sobre%20como%20pueden%20mejorar%20la%20imagen%20de%20mi%20restaurante"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw">WHATSAPP</button>
         </a>
       </div>

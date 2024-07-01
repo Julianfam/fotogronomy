@@ -3,7 +3,7 @@ import React from 'react';
 // Componente de Tarjeta de Precio
 const PriceCard = ({ title, price, features, buttonText }) => {
   const handleWhatsAppMessage = () => {
-    const message = encodeURIComponent("Hola, estoy interesado en " + title + " que tiene un precio de " + price + ".");
+    const message = encodeURIComponent('Hola, estoy interesado en ' + title + ' que tiene un precio de ' + price + '.');
     const whatsappUrl = `https://api.whatsapp.com/send?phone=573202502648&text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
