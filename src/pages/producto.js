@@ -54,8 +54,8 @@ const Producto = () => {
     {
       title: 'Manejo de Redes y Planeación de Campañas',
       price: 'desde $300,000',
-      features: ['Por meses o por Campaña', 'Incluye al menos 8 Publicaciones'],
-      buttonText: 'Subscribe',
+      features: ['Por meses o por Campaña', 'Desde 8 Publicaciones' , 'Inteligencia artificial en edición'],
+      buttonText: 'Reserva tu plan',
     },
     {
       title: 'Solicitud Especializada',
