@@ -24,7 +24,7 @@ const cardContents = [
   'Da vida a tu visión con contenido visual personalizado. Desde fotos hasta videos, cada pieza será una expresión auténtica de tu estilo y marca.',
 ];
 
-const buttonText = 'Contactanos';
+const buttonText = 'Da click aquí y conoce más sobre nuestros servicios';
 
 const SeccionConIcluidos = () => {
   return (
@@ -56,7 +56,7 @@ const SeccionConIcluidos = () => {
         </div>
 
         {/* Botón */}
-        <Link href="/contact" passHref className="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
+        <Link href="/producto" passHref className="flex mx-auto justify-center mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
           {buttonText}
         </Link>
       </div>
