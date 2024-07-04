@@ -4,8 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import image1 from '/public/assets/images/image07.jpg';
-import image2 from '/public/assets/Hamburguesa-chill-grill.jpg';
-import image3 from '/public/assets/images/image29.jpg';
+import image2 from '/public/assets/images/image18.jpg';
+import image3 from '/public/assets/images/image23.jpg';
 
 export default function Imagen100() {
   const imageUrls = [image1, image2, image3];
@@ -13,9 +13,9 @@ export default function Imagen100() {
   const textContent = [
     {
       categoryText: 'Fotografía y Maquillaje de Alimentos',
-      titleText: 'Interesado en fotografía profesional de alimentos?',
-      descriptionText: 'La idea es provocar, somos especializados en alimentos',
-      learnMoreText: '',
+      titleText: 'Capturar el sabor a través del lente',
+      descriptionText: 'Fotografía gastronomica',
+      learnMoreText: 'Descubre mas Fotos',
       likesText: '1.2K 1',
       commentsText: '6 1',
     },
@@ -31,7 +31,7 @@ export default function Imagen100() {
       categoryText: 'Nuevos Videos Gastronómicos',
       titleText: 'Reels?, Historias?, TikToks?',
       descriptionText: 'Videos que antojan',
-      learnMoreText: '',
+      learnMoreText: 'Learn More 3',
       likesText: '1.2K 3',
       commentsText: '6 3',
     },
@@ -43,30 +43,20 @@ export default function Imagen100() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    pauseOnHover: false,
   };
 
   const imageContainerStyle = {
-    width: '100vw',
+    width: '100%',
     height: '100vh',
-    overflow: 'visible',
+    overflow: 'visible  ',
     position: 'relative',
   };
-
   return (
     <Slider {...sliderSettings}>
       {imageUrls.map((imageUrl, index) => (
         <div key={index}>
           <div className="container mx-auto" style={imageContainerStyle}>
-            <Image
-              src={imageUrl}
-              alt={`Image ${index}`}
-              fill="auto"
-              style={{ objectFit: 'cover', overflow: 'hidden' }}
-              loading="lazy" // Enable lazy loading
-            />
+            <Image src={imageUrl} alt={`Image ${index}`} fill="auto" style={{ objectFit: 'cover', overflow: 'hidden' }} />
             <div className="w-full md:w-1/2 lg:w-1/3" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
               <div className="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative">
                 <div
